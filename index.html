@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>McKinsey Website Practice</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- everything is hidden until the prompt answer is 1 -->
+  <div id="website">
+
+    <!-- navbar -->
+    <nav class="top-nav">
+      <div class="container-fluid d-flex align-items-center justify-content-between nav-inside">
+        <div class="d-flex align-items-center gap-3">
+          <button class="hamburger" aria-label="menu">
+            <span></span><span></span><span></span>
+          </button>
+
+          <a href="#" class="logo-text">
+            McKinsey<br><small>&amp; Company</small>
+          </a>
+        </div>
+
+        <div class="right-links d-flex align-items-center">
+          <a href="#">Sign In</a>
+          <a href="#">Subscribe</a>
+          <button class="search-btn" aria-label="search"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <header class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-8 col-md-10">
+            <p class="hero-small">WELCOME TO OUR WEBSITE</p>
+            <h1>What is your next brilliant move?</h1>
+            <p class="hero-paragraph">Game-changing work. People and technology helping companies grow, improve, and make better decisions.</p>
+            <a href="#insights" class="main-link">Explore our latest insights <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- little article strip -->
+    <section class="article-strip" id="insights">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="small-story">
+              <p class="label">ARTICLE</p>
+              <h3>How companies can prepare for a changing global economy</h3>
+              <a href="#">Read more →</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="small-story middle-story">
+              <p class="label">REPORT</p>
+              <h3>The global balance sheet and what leaders should know</h3>
+              <a href="#">Read more →</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="small-story">
+              <p class="label">RESEARCH</p>
+              <h3>Building stronger organizations in the age of artificial intelligence</h3>
+              <a href="#">Read more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- case study -->
+    <section class="case-study">
+      <div class="container-fluid p-0">
+        <div class="row g-0 align-items-stretch">
+          <div class="col-lg-6 case-image"></div>
+          <div class="col-lg-6 case-text d-flex align-items-center">
+            <div>
+              <p class="label text-white">CASE STUDY</p>
+              <h2>How a growing retailer became more digital and customer focused</h2>
+              <p>The company redesigned some of its operations and used data to improve everyday business decisions.</p>
+              <a href="#" class="white-link">Read the case study →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest ideas -->
+    <section class="latest-section py-5">
+      <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-end mb-4 latest-heading">
+          <div>
+            <p class="label">LATEST IDEAS</p>
+            <h2 class="section-title">Insights for what comes next</h2>
+          </div>
+          <a href="#" class="dark-link">See all insights →</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <article class="insight-card">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Business data charts">
+              <div class="card-writing">
+                <p class="label">ARTICLE</p>
+                <h3>The real advantage of using AI well</h3>
+                <p>Technology is important, but people and good processes still decide the result.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="insight-card second-card">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" alt="Team meeting">
+              <div class="card-writing">
+                <p class="label">PODCAST</p>
+                <h3>The human advantage in a digital economy</h3>
+                <p>Why leadership, learning, and clear thinking are becoming more valuable.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <article class="insight-card">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80" alt="People working in an office">
+              <div class="card-writing">
+                <p class="label">REPORT</p>
+                <h3>Why repeat innovators can grow faster</h3>
+                <p>A simple look at how companies turn one successful idea into many more.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="newsletter-section">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <p class="label text-white">STAY UPDATED</p>
+            <h2>Subscribe to our latest business insights</h2>
+            <p class="newsletter-text">Choose the topics you care about and receive selected articles in your inbox.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="simple-form" action="#">
+              <input type="email" placeholder="Enter your email address">
+              <button type="button">Subscribe</button>
+            </form>
+            <small class="form-note">This form is only for the design and does not send information.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- help clients -->
+    <section class="help-section py-5">
+      <div class="container py-4">
+        <p class="label">WHAT WE DO</p>
+        <h2 class="section-title mb-2">How we help clients</h2>
+        <p class="help-intro">We work with organizations on strategy, operations, people, technology, and growth.</p>
+
+        <div class="row g-3 mt-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-box">
+              <span>01</span>
+              <h3>Industry expertise</h3>
+              <p>Ideas and experience for different industries and business problems.</p>
+              <a href="#">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-box odd-box">
+              <span>02</span>
+              <h3>Capabilities</h3>
+              <p>Practical support for improving the way organizations work.</p>
+              <a href="#">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="service-box">
+              <span>03</span>
+              <h3>Technology and AI</h3>
+              <p>Helping businesses use technology in a clear and useful way.</p>
+              <a href="#">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- careers -->
+    <section class="careers-section">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-lg-7 career-picture"></div>
+          <div class="col-lg-5 career-copy d-flex align-items-center">
+            <div>
+              <p class="label text-white">CAREERS</p>
+              <h2>Looking for your next move?</h2>
+              <p>Join people who enjoy solving difficult problems and creating real impact.</p>
+              <a href="#" class="white-link">Explore careers →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- social impact -->
+    <section class="impact-section py-5">
+      <div class="container py-4">
+        <div class="row mb-4">
+          <div class="col-lg-8">
+            <p class="label">SOCIAL IMPACT</p>
+            <h2 class="section-title">Sharing ideas to help more people succeed</h2>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="impact-item">
+              <h3>Free learning programs</h3>
+              <p>Practical learning opportunities for students, workers, and nonprofit organizations.</p>
+              <a href="#">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-item">
+              <h3>Sustainable growth</h3>
+              <p>Helping organizations think about long-term performance and responsibility.</p>
+              <a href="#">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-item">
+              <h3>Skills for the future</h3>
+              <p>Building useful skills that can support people through changing careers.</p>
+              <a href="#">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- app-looking banner -->
+    <section class="app-banner">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <p>The world moves fast. Do not just keep pace.</p>
+            <h2>Stay ahead with our latest insights.</h2>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#" class="outline-button">Download the app</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-area">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a href="#" class="footer-logo">McKinsey<br><small>&amp; Company</small></a>
+            <p class="practice-note">Student front-end practice project. Not an official McKinsey website.</p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h5>About</h5>
+            <a href="#">Overview</a>
+            <a href="#">Our people</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h5>Insights</h5>
+            <a href="#">Articles</a>
+            <a href="#">Reports</a>
+            <a href="#">Podcasts</a>
+          </div>
+          <div class="col-lg-4">
+            <h5>Follow us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <p class="copyright">© 2026 Website practice. Some links are not connected.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

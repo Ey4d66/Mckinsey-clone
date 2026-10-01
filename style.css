@@ -1,0 +1,488 @@
+/* I used bootstrap for the grid but made the rest myself */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#111;
+  background:white;
+}
+
+#website{
+  display:none;
+}
+
+a{
+  text-decoration:none;
+}
+
+.top-nav{
+  background:#051c2c;
+  min-height:88px;
+  width:100%;
+}
+
+.nav-inside{
+  min-height:88px;
+  padding-left:38px;
+  padding-right:46px;
+}
+
+.hamburger{
+  border:0;
+  background:transparent;
+  width:31px;
+  padding:0;
+}
+
+.hamburger span{
+  width:28px;
+  height:2px;
+  display:block;
+  background:#fff;
+  margin:6px 0;
+}
+
+.logo-text,
+.footer-logo{
+  color:white;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size:27px;
+  line-height:.78;
+}
+
+.logo-text small,
+.footer-logo small{
+  font-size:13px;
+  letter-spacing:2px;
+}
+
+.right-links{
+  gap:27px;
+}
+
+.right-links a{
+  color:white;
+  font-size:14px;
+}
+
+.search-btn{
+  background:transparent;
+  border:none;
+  color:white;
+  font-size:20px;
+}
+
+.hero-section{
+  min-height:625px;
+  position:relative;
+  color:white;
+  background-image:url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=85');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(0,18,35,.86), rgba(0,18,35,.3));
+}
+
+.hero-content{
+  z-index:2;
+  position:relative;
+  padding-top:25px;
+}
+
+.hero-small,
+.label{
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:1.7px;
+  margin-bottom:13px;
+}
+
+.hero-section h1{
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size:72px;
+  line-height:1.03;
+  max-width:850px;
+  margin-bottom:25px;
+}
+
+.hero-paragraph{
+  max-width:670px;
+  font-size:20px;
+  line-height:1.5;
+  margin-bottom:28px;
+}
+
+.main-link,
+.white-link{
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+  border-bottom:1px solid rgba(255,255,255,.65);
+  padding-bottom:5px;
+}
+
+.main-link:hover,
+.white-link:hover{
+  color:#ddd;
+}
+
+.article-strip{
+  background:#f5f5f3;
+}
+
+.small-story{
+  min-height:190px;
+  padding:10px 27px 15px 10px;
+}
+
+.middle-story{
+  border-left:1px solid #bbb;
+  border-right:1px solid #bbb;
+  padding-left:30px;
+}
+
+.small-story h3{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:24px;
+  line-height:1.25;
+  margin-bottom:24px;
+}
+
+.small-story a,
+.dark-link,
+.service-box a,
+.impact-item a{
+  color:#111;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.case-image{
+  min-height:570px;
+  background-image:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1300&q=80');
+  background-size:cover;
+  background-position:center;
+}
+
+.case-text{
+  min-height:570px;
+  padding:70px 8%;
+  color:white;
+  background:#0b405f;
+}
+
+.case-text h2,
+.career-copy h2{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:48px;
+  line-height:1.12;
+  margin-bottom:22px;
+}
+
+.case-text p,
+.career-copy p{
+  line-height:1.7;
+  font-size:17px;
+  max-width:570px;
+}
+
+.section-title{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:46px;
+}
+
+.insight-card{
+  height:100%;
+  background:#f3f3f1;
+  border-bottom:4px solid #0b405f;
+}
+
+.insight-card img{
+  width:100%;
+  height:245px;
+  object-fit:cover;
+}
+
+.card-writing{
+  padding:28px 25px 34px;
+}
+
+.card-writing h3{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:29px;
+  margin-bottom:15px;
+}
+
+.card-writing p:last-child{
+  line-height:1.6;
+  color:#444;
+}
+
+.second-card{
+  margin-top:16px;
+}
+
+.newsletter-section{
+  background:#051c2c;
+  color:white;
+}
+
+.newsletter-section h2{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:42px;
+}
+
+.newsletter-text{
+  color:#d7e0e5;
+  max-width:540px;
+}
+
+.simple-form{
+  display:flex;
+  gap:8px;
+}
+
+.simple-form input{
+  width:72%;
+  border:1px solid #d8d8d8;
+  padding:15px;
+  outline:none;
+}
+
+.simple-form button{
+  width:28%;
+  border:1px solid white;
+  background:white;
+  color:#051c2c;
+  font-weight:bold;
+}
+
+.form-note{
+  color:#aebbc3;
+  display:block;
+  margin-top:9px;
+}
+
+.help-intro{
+  max-width:650px;
+  font-size:18px;
+  color:#555;
+}
+
+.service-box{
+  background:#f1f1ef;
+  min-height:310px;
+  padding:30px;
+  position:relative;
+}
+
+.odd-box{
+  background:#e6eaec;
+}
+
+.service-box span{
+  color:#617b89;
+  font-size:13px;
+}
+
+.service-box h3{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:31px;
+  margin-top:45px;
+}
+
+.service-box p{
+  color:#444;
+  line-height:1.6;
+  min-height:77px;
+}
+
+.career-picture{
+  min-height:555px;
+  background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1300&q=80');
+  background-position:center;
+  background-size:cover;
+}
+
+.career-copy{
+  min-height:555px;
+  padding:65px 7%;
+  color:white;
+  background:#16364a;
+}
+
+.impact-item{
+  border-top:4px solid #0b405f;
+  padding:24px 8px 15px 0;
+}
+
+.impact-item h3{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:27px;
+}
+
+.impact-item p{
+  color:#555;
+  line-height:1.65;
+}
+
+.app-banner{
+  background:#e7eaec;
+}
+
+.app-banner p{
+  margin-bottom:6px;
+  font-weight:bold;
+}
+
+.app-banner h2{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:42px;
+}
+
+.outline-button{
+  border:1px solid #111;
+  padding:14px 23px;
+  color:#111;
+  display:inline-block;
+}
+
+.footer-area{
+  background:#051c2c;
+  color:white;
+}
+
+.footer-area h5{
+  font-size:15px;
+  margin-bottom:17px;
+}
+
+.footer-area .col-6 a,
+.footer-area .col-lg-4 a:not(.footer-logo){
+  color:#c7d0d6;
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.practice-note{
+  color:#aebbc3;
+  max-width:280px;
+  margin-top:24px;
+  font-size:13px;
+}
+
+.social-icons{
+  display:flex;
+  gap:18px;
+}
+
+.social-icons a{
+  font-size:21px !important;
+}
+
+.footer-area hr{
+  border-color:#82919b;
+  margin-top:35px;
+}
+
+.copyright{
+  color:#aebbc3;
+  font-size:12px;
+  margin-bottom:0;
+}
+
+/* mobile - I did only basic responsive changes */
+@media(max-width: 800px){
+  .nav-inside{
+    padding-left:18px;
+    padding-right:17px;
+    min-height:75px;
+  }
+
+  .top-nav{ min-height:75px; }
+
+  .right-links a:nth-child(2){
+    display:none;
+  }
+
+  .hero-section{
+    min-height:560px;
+    background-position:60% center;
+  }
+
+  .hero-section h1{
+    font-size:49px;
+  }
+
+  .hero-paragraph{
+    font-size:17px;
+  }
+
+  .middle-story{
+    border-right:0;
+  }
+
+  .section-title,
+  .case-text h2,
+  .career-copy h2,
+  .newsletter-section h2,
+  .app-banner h2{
+    font-size:37px;
+  }
+
+  .latest-heading{
+    display:block !important;
+  }
+
+  .dark-link{
+    display:inline-block;
+    margin-top:10px;
+  }
+
+  .second-card{ margin-top:0; }
+}
+
+@media(max-width: 480px){
+  .right-links a{
+    display:none;
+  }
+
+  .logo-text{ font-size:21px; }
+  .logo-text small{ font-size:10px; }
+
+  .hero-section h1{
+    font-size:39px;
+  }
+
+  .small-story,
+  .middle-story{
+    border:0;
+    border-bottom:1px solid #aaa;
+    padding-left:5px;
+  }
+
+  .simple-form{
+    display:block;
+  }
+
+  .simple-form input,
+  .simple-form button{
+    width:100%;
+  }
+
+  .simple-form button{
+    padding:14px;
+    margin-top:8px;
+  }
+}
